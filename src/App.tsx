@@ -2,8 +2,24 @@ import React from "react";
 import Card from "./Components/Card";
 import "./App.css";
 
+export type Job = {
+  id: number;
+  company: string;
+  logo: string;
+  new: Boolean;
+  featured: Boolean;
+  position: string;
+  role: string;
+  level: string;
+  postedAt: string;
+  contract: string;
+  location: string;
+  languages: [string?, string?, string?];
+  tools: [string?, string?, string?];
+};
+
 function App() {
-  const jobList = [
+  const jobList: Job[] = [
     {
       id: 1,
       company: "Photosnap",

@@ -1,10 +1,11 @@
 import React from "react";
+import { Job } from "../App";
 import "../App.css";
 
-function Card(props) {
+function Card(props: any) {
   return (
     <>
-      {props.jobList.map((job: []) => {
+      {props.jobList.map((job: Job) => {
         return (
           <div className="card grid mx-20 bg-white">
             <div>
@@ -25,13 +26,13 @@ function Card(props) {
               <span>{job.role}</span>
               <span>{job.level}</span>
               <span>
-                {job.languages.map((language: []) => {
+                {job.languages.map((language) => {
                   return <>{language}</>;
                 })}
               </span>
               <span>
-                {job.tools.map((language: []) => {
-                  return <>{language}</>;
+                {job.tools.map((tool) => {
+                  return <>{tool}</>;
                 })}
               </span>
             </div>
