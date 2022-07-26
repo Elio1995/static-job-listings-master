@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Components/Card";
-import Header from "../images/bg-header-desktop.svg";
 import "./App.css";
+import Top from "./Components/Top";
 
 export type Job = {
   id: number;
@@ -175,9 +175,7 @@ function App() {
 
   return (
     <div className="App">
-      <div style={{ backgroundColor: "hsl(180, 29%, 50%)" }}>
-        <img alt="header" src={Header} width="100%"></img>
-      </div>
+      <Top />
       <div className="my-20">
         <Card jobList={jobList} />
       </div>
