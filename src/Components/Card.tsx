@@ -4,7 +4,7 @@ import "../App.css";
 
 function Card(props: any) {
   return (
-    <>
+    <div className="my-20">
       {props.jobList.map((job: Job) => {
         return (
           <div className="card grid p-10 my-7 mx-40 bg-white">
@@ -98,7 +98,7 @@ function Card(props: any) {
           </div>
         );
       })}
-    </>
+    </div>
   );
 }
 

@@ -176,9 +176,7 @@ function App() {
   return (
     <div className="App">
       <Top />
-      <div className="my-20">
-        <Card jobList={jobList} />
-      </div>
+      <Card jobList={jobList} />
     </div>
   );
 }
