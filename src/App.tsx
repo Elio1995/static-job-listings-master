@@ -173,6 +173,29 @@ function App() {
     },
   ];
 
+  function extract(array: [], newarray: []) {
+    if (!newarray) newarray = [];
+    if (array)
+      for (var i = 0; i < array.length; ++i) {
+        if (array[i].constructor.name === "Array") extract(array[i], newarray);
+        else newarray.push(array[i]);
+      }
+    return newarray;
+  }
+
+  const filterLanguage = [...new Set(jobList.map((Val) => Val.languages))];
+  const filterTool = [...new Set(jobList.map((Val) => Val.tools))];
+
+  const extraxtLanguage = extract(filterLanguage);
+  const extraxtTool = extract(filterTool);
+
+  const languageArray = [...new Set(extraxtLanguage)];
+  const toolArray = [...new Set(extraxtTool)];
+
+  const languageAndToolArray = languageArray.concat(toolArray);
+
+  console.log(languageAndToolArray);
+
   return (
     <div className="App">
       <Top />
