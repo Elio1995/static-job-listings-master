@@ -48,7 +48,7 @@ function Card(props: any) {
                 <span>{job.location}</span>
               </div>
             </div>
-            <div className="text-end text-black">
+            <div className="text-end mt-8 text-black">
               <span
                 style={{
                   backgroundColor: "hsl(180, 52%, 96%)",
