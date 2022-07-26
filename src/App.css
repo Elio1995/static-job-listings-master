@@ -5,6 +5,6 @@
 }
 
 .card {
-  grid-template-columns: 100px 2fr 1fr;
+  grid-template-columns: 100px 1fr 2fr;
   box-shadow: 0 2px 15px -2px hsl(180, 29%, 50%);
 }
