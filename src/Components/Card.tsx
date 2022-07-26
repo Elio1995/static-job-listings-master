@@ -6,8 +6,9 @@ function Card(props: any) {
   return (
     <div className="my-20">
       {props.jobList.map((job: Job) => {
+        const jobId = job.id;
         return (
-          <div className="card grid p-10 my-7 mx-40 bg-white">
+          <div key={jobId} className="card grid p-10 my-7 mx-40 bg-white">
             <div>
               <img src={job.logo}></img>
             </div>
