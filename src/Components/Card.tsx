@@ -7,7 +7,7 @@ function Card(props: any) {
     <>
       {props.jobList.map((job: Job) => {
         return (
-          <div className="card grid mx-20 bg-white">
+          <div className="card grid p-10 my-7 mx-40 bg-white">
             <div>
               <img src={job.logo}></img>
             </div>
