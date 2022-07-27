@@ -36,7 +36,7 @@ function App() {
   return (
     <div className="App">
       <Top />
-      <FilterComponent filterItem={filterItem} />
+      <FilterComponent setItems={setItems} filterItem={filterItem} />
       <Card jobList={items} />
     </div>
   );

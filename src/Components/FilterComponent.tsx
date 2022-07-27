@@ -27,14 +27,22 @@ function FilterComponent(props: any) {
 
   return (
     <div>
+      <button
+        className="text-white mx-2 mt-5"
+        onClick={() => props.setItems(Data)}
+      >
+        All
+      </button>
       {languageAndToolArray.map((languageTool) => {
         return (
-          <button
-            onClick={() => props.filterItem(languageTool)}
-            className="text-white mx-2 mt-5"
-          >
-            {languageTool}
-          </button>
+          <>
+            <button
+              onClick={() => props.filterItem(languageTool)}
+              className="text-white mx-2 mt-5"
+            >
+              {languageTool}
+            </button>
+          </>
         );
       })}
     </div>
