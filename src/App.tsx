@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "./Components/Card";
 import "./App.css";
 import Top from "./Components/Top";
@@ -196,10 +196,31 @@ function App() {
 
   console.log(languageAndToolArray);
 
+  const [items, setItems] = useState(jobList);
+
+  const filterItem = (curcat: string) => {
+    const newItem = jobList.filter((newVal) => {
+      return newVal.languages.includes(curcat) || newVal.tools.includes(curcat);
+    });
+    console.log(newItem);
+
+    setItems(newItem);
+  };
+
   return (
     <div className="App">
       <Top />
-      <Card jobList={jobList} />
+      {languageAndToolArray.map((languageTool) => {
+        return (
+          <button
+            onClick={() => filterItem(languageTool)}
+            className="text-white mx-2 mt-5"
+          >
+            {languageTool}
+          </button>
+        );
+      })}
+      <Card jobList={items} />
     </div>
   );
 }
