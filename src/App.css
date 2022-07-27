@@ -8,3 +8,73 @@
   grid-template-columns: 100px 1fr 2fr;
   box-shadow: 0 2px 15px -2px hsl(180, 29%, 50%);
 }
+
+.ruler {
+  display: none;
+}
+
+@media screen and (max-width: 1140px) {
+  .card {
+    grid-template-columns: 100px 2fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .card {
+    grid-template-columns: 100px 2fr 1fr;
+  }
+
+  .thirdGrid {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    margin-top: 0;
+  }
+  .thirGridSpan {
+    margin-bottom: 3px;
+  }
+}
+
+@media screen and (max-width: 862px) {
+  .card {
+    grid-template-columns: 100px 1fr;
+    padding-top: 15px;
+    margin: 28px 140px;
+  }
+  .thirdGrid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: start;
+    margin-top: 5px;
+    margin-left: 90px;
+  }
+  .thirdGrid span {
+    margin-top: 10px;
+  }
+
+  .ruler {
+    display: flex;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .jobList {
+    margin: 10px 0;
+  }
+  .card {
+    margin: 28px 120px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .card {
+    margin: 28px 80px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .jobList {
+    margin: 10px 0;
+  }
+  .card {
+    margin: 28px 40px;
+  }
+}

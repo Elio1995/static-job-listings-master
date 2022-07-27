@@ -26,7 +26,7 @@ function FilterComponent(props: any) {
   console.log(languageAndToolArray);
 
   return (
-    <div>
+    <div className="mx-20">
       <button
         className="text-white mx-2 mt-5"
         onClick={() => props.setItems(Data)}
