@@ -6,6 +6,7 @@ function FilterComponent(props: any) {
     if (!newarray) newarray = [];
     if (array)
       for (var i = 0; i < array.length; ++i) {
+        // @ts-expect-error
         if (array[i].constructor.name === "Array") extract(array[i], newarray);
         else newarray.push(array[i]);
       }
@@ -14,8 +15,9 @@ function FilterComponent(props: any) {
 
   const filterLanguage = [...new Set(Data.map((Val) => Val.languages))];
   const filterTool = [...new Set(Data.map((Val) => Val.tools))];
-
+  // @ts-expect-error
   const extraxtLanguage = extract(filterLanguage);
+  // @ts-expect-error
   const extraxtTool = extract(filterTool);
 
   const languageArray = [...new Set(extraxtLanguage)];

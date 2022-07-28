@@ -1,5 +1,7 @@
 import React from "react";
+// @ts-expect-error
 import DesktopHeader from "../../images/bg-header-desktop.svg";
+// @ts-expect-error
 import MobileHeader from "../../images/bg-header-mobile.svg";
 import "../App.css";
 
