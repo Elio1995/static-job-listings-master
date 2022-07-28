@@ -6,13 +6,23 @@
 
 .card {
   grid-template-columns: 100px 1fr 2fr;
-  box-shadow: 0 2px 15px -2px hsl(180, 29%, 50%);
+  box-shadow: 0 5px 15px -3px hsl(180, 29%, 50%);
+}
+.filterDiv {
+  box-shadow: 0 4px 30px -3px hsl(180, 29%, 50%);
 }
 
 .ruler {
   display: none;
 }
 
+.filterButtons {
+  margin-top: 5px;
+}
+
+.mobileTop {
+  display: none;
+}
 @media screen and (max-width: 1140px) {
   .card {
     grid-template-columns: 100px 2fr 1fr;
@@ -29,7 +39,7 @@
     grid-template-rows: auto auto auto auto;
     margin-top: 0;
   }
-  .thirGridSpan {
+  .thirdGridSpan {
     margin-bottom: 3px;
   }
 }
@@ -38,6 +48,9 @@
   .card {
     grid-template-columns: 100px 1fr;
     padding-top: 15px;
+    /* margin: 28px 140px; */
+  }
+  .mainApp {
     margin: 28px 140px;
   }
   .thirdGrid {
@@ -61,12 +74,12 @@
   .jobList {
     margin: 10px 0;
   }
-  .card {
+  .mainApp {
     margin: 28px 120px;
   }
 }
 @media screen and (max-width: 680px) {
-  .card {
+  .mainApp {
     margin: 28px 80px;
   }
 }
@@ -74,7 +87,79 @@
   .jobList {
     margin: 10px 0;
   }
-  .card {
+  .mainApp {
     margin: 28px 40px;
+  }
+}
+@media screen and (max-width: 525px) {
+  .jobList {
+    margin: 10px 0;
+  }
+  .mainApp {
+    margin: 28px 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .card {
+    display: flow-root;
+  }
+  .jobList {
+    margin-top: 150px;
+  }
+  .thirdGrid {
+    margin-left: 0px;
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
+  .filterDiv {
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    right: 20px;
+  }
+  .mobileTop {
+    display: block;
+  }
+  .desktopTop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .filterDiv {
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    right: 20px;
+  }
+  .jobList {
+    margin-top: 165px;
+  }
+}
+@media screen and (max-width: 397px) {
+  .filterDiv {
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    right: 20px;
+  }
+  .jobList {
+    margin-top: 220px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .card {
+    display: flow-root;
+    padding: 25px;
+  }
+  .filterDiv {
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    right: 20px;
+  }
+  .jobList {
+    margin-top: 230px;
   }
 }

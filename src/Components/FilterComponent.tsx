@@ -26,9 +26,13 @@ function FilterComponent(props: any) {
   console.log(languageAndToolArray);
 
   return (
-    <div className="mx-20">
+    <div className="filterDiv bg-white py-5 mt-5">
       <button
-        className="text-white mx-2 mt-5"
+        className="filterButtons text-white mx-2 font-black text-sm"
+        style={{
+          color: "hsl(180, 29%, 50%)",
+          backgroundColor: "hsl(180, 52%, 96%)",
+        }}
         onClick={() => props.setItems(Data)}
       >
         All
@@ -38,7 +42,11 @@ function FilterComponent(props: any) {
           <>
             <button
               onClick={() => props.filterItem(languageTool)}
-              className="text-white mx-2 mt-5"
+              className="filterButtons text-white mx-2 font-black text-sm"
+              style={{
+                color: "hsl(180, 29%, 50%)",
+                backgroundColor: "hsl(180, 52%, 96%)",
+              }}
             >
               {languageTool}
             </button>

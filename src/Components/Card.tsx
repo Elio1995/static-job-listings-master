@@ -4,15 +4,15 @@ import "../App.css";
 
 function Card(props: any) {
   return (
-    <div className="jobList my-20">
+    <div className="jobList my-14">
       {props.jobList.map((job: Job) => {
         const jobId = job.id;
         return (
-          <div key={jobId} className="card grid p-10 my-7 mx-40 bg-white">
+          <div key={jobId} className="card grid p-10 my-7 bg-white">
             <div className="logo">
               <img src={job.logo}></img>
             </div>
-            <div className="text-start text-black">
+            <div className="jobTitle text-start text-black">
               <span
                 style={{ color: "hsl(180, 29%, 50%)" }}
                 className="font-black mr-3"

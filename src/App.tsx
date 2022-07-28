@@ -36,8 +36,10 @@ function App() {
   return (
     <div className="App">
       <Top />
-      <FilterComponent setItems={setItems} filterItem={filterItem} />
-      <Card jobList={items} />
+      <div className="mainApp mx-40">
+        <FilterComponent setItems={setItems} filterItem={filterItem} />
+        <Card jobList={items} />
+      </div>
     </div>
   );
 }
