@@ -19,7 +19,7 @@ This project is done by React + Typescript + Tailwind Css
 - CSS Grid
 - Tailwind CSS
 - React
--Typescript
+- Typescript
 
 ### What I learnt
 This is the challenge that I have enjoyed the most. I worked a lot on styling and I thing it looks nice. I had some difficulties on making filter work but as always google is there for me :D. I understood better how filter function works by using React + Typescript.
