@@ -128,24 +128,15 @@
 
 @media screen and (max-width: 440px) {
   .filterDiv {
-    position: absolute;
-    top: 120px;
-    left: 20px;
-    right: 20px;
+    top: 100px;
   }
   .jobList {
-    margin-top: 165px;
+    margin-top: 150px;
   }
 }
 @media screen and (max-width: 397px) {
-  .filterDiv {
-    position: absolute;
-    top: 120px;
-    left: 20px;
-    right: 20px;
-  }
   .jobList {
-    margin-top: 220px;
+    margin-top: 210px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -154,12 +145,6 @@
     padding: 25px;
   }
   .filterDiv {
-    position: absolute;
-    top: 120px;
-    left: 20px;
-    right: 20px;
-  }
-  .jobList {
-    margin-top: 230px;
+    top: 90px;
   }
 }
