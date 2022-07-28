@@ -2,7 +2,15 @@
 
 This project is done by React + Typescript + Tailwind Css
 
+
+
 ## Overview
+
+### How to run it locally?
+- Download the file
+- cd static-job-listings-master
+- npm install
+- npm run dev
 
 ### Links
 - [Solution](https://github.com/Elio1995/static-job-listings-master)
