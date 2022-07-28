@@ -1,8 +1,4 @@
 import React from "react";
-// @ts-expect-error
-import DesktopHeader from "../../images/bg-header-desktop.svg";
-// @ts-expect-error
-import MobileHeader from "../../images/bg-header-mobile.svg";
 import "../App.css";
 
 function Top() {
@@ -12,13 +8,21 @@ function Top() {
         className="mobileTop"
         style={{ backgroundColor: "hsl(180, 29%, 50%)" }}
       >
-        <img alt="header" src={MobileHeader} width="100%"></img>
+        <img
+          alt="header"
+          src="../../images/bg-header-mobile.svg"
+          width="100%"
+        ></img>
       </div>
       <div
         className="desktopTop"
         style={{ backgroundColor: "hsl(180, 29%, 50%)" }}
       >
-        <img alt="header" src={DesktopHeader} width="100%"></img>
+        <img
+          alt="header"
+          src="../../images/bg-header-desktop.svg"
+          width="100%"
+        ></img>
       </div>
     </>
   );
